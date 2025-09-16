@@ -1,93 +1,4 @@
-/*
---- 01 Typography System
 
-*/
-
-:root{
-    --primary-color: #e67e22;
-    --gray1:#555;
-    --gray2:#333;
-    --shade1:#fdf2e9;
-    --shade2:#cf711f;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-}
-body{
-    font-family: "Rubik",sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: var(--gray1);
-}
-
-/*****************************/
-/*  GENERAL REUSABLE COMPONENTS  */
-/*****************************/
-
-.container{
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-}
-
-.grid{
-    display: grid;
-    gap: 9.6rem;
-}
-
-.grid--2-cols{
-    grid-template-columns: repeat(2,1fr);
-}
-
-.grid--3-cols{
-    grid-template-columns: repeat(3,1fr);
-}
-
-.heading-primary{
-   font-size: 5.2rem; 
-   font-weight: 700;
-   line-height: 1.05;
-   color: var(--gray2);
-   letter-spacing: -0.5px;
-   margin-bottom: 3.2rem;
-}
-.btn:link, .btn:visited{
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    transition: background-color 0.3s;
-}
-
-.btn-full:link, btn-full:visited{
-    background-color: var(--primary-color);
-    color: white;
-}
-.btn-full:hover, btn-full:active{
-    background-color: var(--shade2);
-}
-
-.btn-outline:link, .btn-outline:visited{
-    background-color: white;
-    color: var(--gray1);
-}
-.btn-outline:hover, .btn-outline:active{
-    background-color: #fdf2e9;
-    box-shadow: inset 0 0 0 3px white;
-}
-.margin-right-sm{
-    margin-right: 1.6rem !important;
-}
 
 
 /*****************************/
@@ -149,7 +60,7 @@ body{
     padding: 9.6rem 0;
 }
 .hero{
-    max-width: 130rem;
+    max-width: 120rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -199,8 +110,29 @@ body{
 /*****************************/
 
 .section-how{
-    padding: 9.6px 0;
-    background-color: orangered;
+    padding: 9.6rem 0;
+}
+
+.step-number{
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img{
+    width: 30%;
 }
 
 
