@@ -43,6 +43,14 @@ body{
     column-gap: 6.4rem;
 }
 
+/* .grid:last-child{
+    margin-bottom: 0;
+} */
+
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
+}
+
 .grid--2-cols{
     grid-template-columns: repeat(2,1fr);
 }
@@ -99,6 +107,7 @@ body{
     text-decoration: none;
     background-color: var(--primary-color);
     font-size: 2rem;
+    color: #fff;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
@@ -139,6 +148,24 @@ body{
     transition: all 0.3s;
 }
 
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.list-icon{
+    font-size: 3rem;
+    color: #e67e22;
+}
+
 .link:hover,link:active{
     color: var(--shade2);
     border-bottom: 1px solid transparent;
@@ -151,3 +178,4 @@ body{
 strong{
     font-weight: 500;
 }
+
